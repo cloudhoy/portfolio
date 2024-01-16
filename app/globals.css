@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-size-sm: clamp(0.8rem, -0.09vw + 0.82rem, 0.75rem);
+    --font-size-base: clamp(1rem, 0vw + 1rem, 1rem);
+    --font-size-xl: clamp(1.25rem, 0.15vw + 1.21rem, 1.33rem);
+    --font-size-2xl: clamp(1.56rem, 0.39vw + 1.47rem, 1.78rem);
+    --font-size-3xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
+    --font-size-4xl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
+    --font-size-5xl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem);
+    --swiper-pagination-color: theme(backgroundColor.primary);
+    --swiper-navigation-color: theme(backgroundColor.primary);
+    --swiper-navigation-sides-offset: 3rem;
+}
+
+body {
+    font-size: var(--font-size-base);
+}
