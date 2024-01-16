@@ -34,12 +34,12 @@ const Searchbar = () => {
   return (
     <div
       ref={ref}
-      className="relative flex items-center justify-end transition-all duration-500"
+      className="relative flex items-center justify-end transition-[width] duration-300"
       style={{ width: isOpen ? "80%" : "3rem" }}
     >
       <input
         ref={inputRef}
-        className="input input-bordered px-5 pr-14 absolute inset-0 opacity-0 transition-all duration-500"
+        className="input input-bordered px-5 pr-14 absolute inset-0 opacity-0"
         style={{ display: isOpen ? "block" : "none" }}
         type="search"
         name="search"
