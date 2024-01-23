@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import Header, { NavItem } from "./Header";
 import { Gift, Grid, Heart, Truck } from "react-feather";
+import Footer from "./Footer";
 
 export type LayoutProps = PropsWithChildren & {
   className?: string;
@@ -18,6 +19,7 @@ const Layout = ({ className, children }: LayoutProps) => {
     <div className="min-h-screen antialiased">
       <Header navItems={navItems} />
       <main className={`content-grid ${className ?? ""}`}>{children}</main>
+      <Footer className="px-4 py-8" />
     </div>
   );
 };
