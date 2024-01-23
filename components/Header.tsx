@@ -84,7 +84,7 @@ const Header = ({ navItems }: HeaderProps) => {
                 <Menu />
               </label>
 
-              <div className="drawer-side">
+              <div className="drawer-side overflow-x-hidden">
                 <label
                   htmlFor="sidebar"
                   aria-label="close sidebar"
