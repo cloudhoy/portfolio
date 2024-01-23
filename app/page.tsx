@@ -14,40 +14,6 @@ import {
 export default function Page() {
   return (
     <Layout>
-      {/* <div
-        className="hero min-h-svh full-width relative"
-        style={{
-          backgroundImage:
-            "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
-        }}
-      >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center">
-          <div className="max-w-md">
-            <div className="mb-4 text-5xl font-bold font-sans-display">
-              Hello there
-            </div>
-            <p className="mb-4">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="btn btn-neutral btn-outline shadow-lg">
-                How does it work?
-              </button>
-              <button className="btn btn-primary shadow-lg">Get Started</button>
-            </div>
-          </div>
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 px-16 py-8 flex justify-center">
-          <a href="#home" className="hover:font-medium">
-            <ArrowDown className="mr-4 motion-safe:animate-bounce inline-block" />
-            Scroll down for more!
-          </a>
-        </div>
-      </div> */}
-
       <section id="home" className="full-width bg-neutral">
         <div className="px-4 pt-12 md:pt-20 pb-0">
           <div className="md:flex h-full">
@@ -112,12 +78,12 @@ export default function Page() {
             </div>
             <div className="relative h-full w-full hidden md:grid overflow-hidden">
               <div className="col-start-1 row-start-1 h-full w-full"></div>
-              <Image
+              {/* <Image
                 src="/avatar_nobg.png"
                 alt="me"
                 fill
                 className="object-contain object-left-bottom drop-shadow-2xl"
-              />
+              /> */}
             </div>
           </div>
         </div>

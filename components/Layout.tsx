@@ -8,10 +8,10 @@ export type LayoutProps = PropsWithChildren & {
 
 const Layout = ({ className, children }: LayoutProps) => {
   const navItems: NavItem[] = [
-    { text: "Men", href: "/", icon: <Gift /> },
-    { text: "Women", href: "/", icon: <Heart /> },
-    { text: "Children", href: "/", icon: <Truck /> },
-    { text: "Explore", href: "/", icon: <Grid />},
+    // { text: "Men", href: "/", icon: <Gift /> },
+    // { text: "Women", href: "/", icon: <Heart /> },
+    // { text: "Children", href: "/", icon: <Truck /> },
+    // { text: "Explore", href: "/", icon: <Grid />},
   ];
   
   return (

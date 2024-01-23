@@ -69,11 +69,7 @@ const Header = ({ navItems }: HeaderProps) => {
               </ul>
             </address>
             <div className="divider divider-horizontal my-2 mx-0 hidden md:flex"></div>
-            <Searcher className="btn-square btn-ghost" />
-            <Cart className="btn-square btn-ghost" />
-            <span className="hidden md:block">
-              <ThemeSwitcher className="btn-square btn-ghost" />
-            </span>
+            <ThemeSwitcher className="btn-square btn-ghost hidden md:inline-grid" />
             <div className="drawer drawer-end md:hidden">
               <input id="sidebar" type="checkbox" className="drawer-toggle" />
               <label
