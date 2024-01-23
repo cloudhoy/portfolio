@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import Link from "next/link";
 import {
   ArrowUpRight,
   CreditCard,
@@ -116,7 +115,7 @@ export default function Page() {
                 src="/avatar_nobg.png"
                 alt="me"
                 fill
-                className="object-contain object-left-bottom drop-shadow-2xl"
+                className="object-contain object-left-bottom drop-shadow-2xl hidden"
               />
             </div>
           </div>
@@ -235,59 +234,6 @@ export default function Page() {
           esse quidem repellendus ratione?
         </p>
       </section>
-
-      <footer className="footer full-width p-2 py-8 text-xs text-muted rounded-t-xl">
-        <aside className="w-full place-items-end text-end">
-          <p className="leading-tight">
-            Designed & built with 💖 by{" "}
-            <a href="https://www.linkedin.com/in/tcheong/" className="link-hover">
-              Tony Cheong
-            </a>
-          </p>
-          <p className="leading-tight">
-            Powered by{" "}
-            <a href="https://nextjs.org" target="_blank" className="link-hover">
-              Next.js
-            </a>
-            ,{" "}
-            <a
-              href="https://tailwindcss.com"
-              target="_blank"
-              className="link-hover"
-            >
-              TailwindCSS
-            </a>
-            ,{" "}
-            <a
-              href="https://daisyui.com"
-              target="_blank"
-              className="link-hover"
-            >
-              daisyUI
-            </a>
-            ,{" "}
-            <a
-              href="https://aws.amazon.com/s3/"
-              target="_blank"
-              className="link-hover"
-            >
-              Amazon S3
-            </a>
-            ,{" "}
-            <a
-              href="https://aws.amazon.com/cloudfront/"
-              target="_blank"
-              className="link-hover"
-            >
-              CloudFront
-            </a>
-            , and{" "}
-            <Link href="/about" className="link-hover">
-              more!
-            </Link>
-          </p>
-        </aside>
-      </footer>
     </Layout>
   );
 }
