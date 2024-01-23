@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: clamp(0.94rem, 0.11vw + 0.91rem, 1rem);
+  --font-size-lg: clamp(1.17rem, 0.14vw + 1.14rem, 1.25rem);
+  --font-size-xl: clamp(1.46rem, 0.18vw + 1.42rem, 1.56rem);
+  --font-size-2xl: clamp(1.83rem, 0.22vw + 1.78rem, 1.95rem);
+  --font-size-3xl: clamp(2.29rem, 0.28vw + 2.22rem, 2.44rem);
+  --font-size-4xl: clamp(2.86rem, 0.35vw + 2.77rem, 3.05rem);
+  --font-size-5xl: clamp(3.58rem, 0.43vw + 3.47rem, 3.81rem);
+  --font-size-6xl: clamp(4.47rem, 0.54vw + 4.33rem, 4.77rem);
+  --font-size-7xl: clamp(5.59rem, 0.68vw + 5.42rem, 5.96rem);
+  --font-size-8xl: clamp(6.98rem, 0.85vw + 6.77rem, 7.45rem);
+  --font-size-9xl: clamp(8.73rem, 1.06vw + 8.47rem, 9.31rem);
+}
+
+body {
+  font-size: var(--font-size-base);
+}
+
+.content-grid,
+.full-width {
+  --padding-inline: 1rem;
+  --content-max-width: 1280px;
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start]
+    minmax(var(--padding-inline), 1fr)
+    [content-start]
+    minmax(0, var(--content-max-width))
+    [content-end]
+    minmax(var(--padding-inline), 1fr)
+    [full-width-end];
+}
+
+.content-grid > :not(.full-width),
+.full-width > :not(.full-width) {
+  grid-column: content;
+}
+
+.content-grid > .full-width,
+.full-width > .full-width {
+  grid-column: full-width;
+}
+
+.full-width .hero-overlay {
+  grid-column: inherit;
+}
+
+.btn[target="_blank"] {
+  @apply relative;
+
+  &::before {
+    @apply content-[''] absolute top-0 right-0 
+      transition-[top,right] ease-in-out duration-200;
+  }
+
+  &:hover::before {
+    @apply block -top-1 -right-1 z-10 w-4 h-4 bg-black/80;
+    mask-image: url("/feather-external-link.svg");
+    mask-size: contain;
+  }
+}
+
+[data-theme="dark"] .btn[target="_blank"]:hover::before {
+  @apply bg-white/80;
+}
+
+
+.text-muted {
+  @apply text-slate-500;
+
+  .link:hover,
+  .link-hover {
+    @apply text-base-content;
+  }
+}
+
+[data-theme="dark"] .text-muted {
+  @apply text-slate-400;
+}
+
+
+[data-theme="dark"] .drop-shadow-2xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(255 255 255 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
