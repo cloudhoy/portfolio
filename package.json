@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "@react-spring/web": "^9.7.3",
@@ -19,10 +20,12 @@
     "react-feather": "^2.0.10"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.1.0",
     "@types/node": "^20.11.4",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.16",
+    "cross-env": "^7.0.3",
     "daisyui": "^4.6.0",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.0.2",
