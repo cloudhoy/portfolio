@@ -26,7 +26,7 @@ const Header = ({ navItems }: HeaderProps) => {
     <div className="drawer drawer-end">
       <input id="sidebar" type="checkbox" className="drawer-toggle" />
       <header
-        className={`fixed top-0 left-0 right-0 md:absolute z-20 backdrop-blur-md transition-transform duration-300 ${
+        className={`fixed top-0 left-0 right-0 md:absolute z-20 transition-transform duration-300 bg-base-100 ${
           lastScrollYDirection === "down"
             ? "-translate-y-full md:translate-y-0"
             : ""
@@ -35,7 +35,7 @@ const Header = ({ navItems }: HeaderProps) => {
         <nav className="navbar px-0 w-full max-w-screen-lg mx-auto justify-between">
           <Link
             href="/"
-            className="text-2xl h-12 w-12 grid place-items-center mr-2"
+            className="text-2xl h-12 w-12 grid place-items-center mr-2 "
           >
             <Logo className="hover:fill-primary transition-[fill] ease-in-out duration-200" />
           </Link>
