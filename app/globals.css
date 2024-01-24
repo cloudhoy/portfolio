@@ -25,7 +25,7 @@ body {
 .content-grid,
 .full-width {
   --padding-inline: 1rem;
-  --content-max-width: 1280px;
+  --content-max-width: 1024px;
 
   display: grid;
   grid-template-columns:

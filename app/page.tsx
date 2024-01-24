@@ -14,85 +14,46 @@ import {
 export default function Page() {
   return (
     <Layout>
-      <section id="home" className="full-width bg-neutral">
-        <div className="px-4 pt-12 md:pt-20 pb-0">
-          <div className="md:flex h-full">
-            <div className="pt-8">
-              <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tighter font-sans-display -ml-1">
-                Tony Cheong
-              </h1>
-              <p className="mb-4 font-medium text-lg sm:text-xl md:text-2xl tracking-tighter text-muted">
-                Software Engineer at{" "}
-                <a
-                  href="#"
-                  target="_blank"
-                  className="link-hover transition-[color]"
-                >
-                  Anacle Systems
-                </a>
-              </p>
-              <p className="mb-4 text-muted">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deleniti facere doloremque voluptatem dolorum corporis maiores,
-                maxime repellat veniam corrupti ipsa voluptatibus enim sequi!{" "}
-                <a
-                  href="#"
-                  target="_blank"
-                  className="link-hover font-semibold"
-                >
-                  some link here
-                </a>{" "}
-                Voluptatem eos possimus cum alias dolorum et!
-              </p>
-              <address className="mb-4">
-                <ul className="flex justify-around sm:justify-start gap-8">
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/tcheong/"
-                      target="_blank"
-                      className="btn btn-square btn-ghost"
-                    >
-                      <Linkedin />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/cloudhoy"
-                      target="_blank"
-                      className="btn btn-square btn-ghost"
-                    >
-                      <GitHub />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:wanhoy.cheong@gmail.com"
-                      target="_blank"
-                      className="btn btn-square btn-ghost"
-                    >
-                      <Mail />
-                    </a>
-                  </li>
-                </ul>
-              </address>
-            </div>
-            <div className="relative h-full w-full hidden md:grid overflow-hidden">
-              <div className="col-start-1 row-start-1 h-full w-full"></div>
-              {/* <Image
-                src="/avatar_nobg.png"
-                alt="me"
-                fill
-                className="object-contain object-left-bottom drop-shadow-2xl"
-              /> */}
-            </div>
+      <section id="home" className="full-width bg-neutral pt-16 md:pt-20">
+        <div className="md:flex h-full">
+          <div className="pt-8">
+            <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tighter font-sans-display -ml-1">
+              Tony Cheong
+            </h1>
+            <p className="mb-4 font-medium text-lg sm:text-xl md:text-2xl tracking-tighter text-muted">
+              Software Engineer at{" "}
+              <a
+                href="#"
+                target="_blank"
+                className="link-hover transition-[color]"
+              >
+                Anacle Systems
+              </a>
+            </p>
+            <p className="mb-4 text-muted">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              facere doloremque voluptatem dolorum corporis maiores, maxime
+              repellat veniam corrupti ipsa voluptatibus enim sequi!{" "}
+              <a href="#" target="_blank" className="link-hover font-semibold">
+                some link here
+              </a>{" "}
+              Voluptatem eos possimus cum alias dolorum et!
+            </p>
+          </div>
+          <div className="relative h-full w-full hidden md:grid overflow-hidden">
+            <div className="col-start-1 row-start-1 h-full w-full"></div>
+            <Image
+              src="/avatar_nobg.png"
+              alt="me"
+              fill
+              className="object-contain object-left-bottom drop-shadow-2xl hidden"
+            />
           </div>
         </div>
       </section>
 
-      <section id="components" className="full-width px-4 py-8">
-        <h2 className="text-2xl font-medium mb-4">
-          Components
-        </h2>
+      <section id="components" className="full-wid py-8">
+        <h2 className="text-2xl font-medium mb-4">Components</h2>
         <p className="mb-8 text-muted">
           Check out these components and their theme color variants!
         </p>
@@ -171,7 +132,7 @@ export default function Page() {
         </article>
       </section>
 
-      <section className="full-width bg-neutral px-4 py-8">
+      <section className="full-width bg-neutral py-8">
         <h2 className="mb-4 text-2xl font-medium">Typography</h2>
         <p className="mb-12 text-lg text-muted">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
@@ -201,59 +162,6 @@ export default function Page() {
           esse quidem repellendus ratione?
         </p>
       </section>
-
-      <footer className="footer full-width p-2 py-8 text-xs text-muted rounded-t-xl">
-        <aside className="w-full place-items-end text-end">
-          <p className="leading-tight">
-            Designed & built with 💖 by{" "}
-            <a href="https://www.linkedin.com/in/tcheong/" className="link-hover">
-              Tony Cheong
-            </a>
-          </p>
-          <p className="leading-tight">
-            Powered by{" "}
-            <a href="https://nextjs.org" target="_blank" className="link-hover">
-              Next.js
-            </a>
-            ,{" "}
-            <a
-              href="https://tailwindcss.com"
-              target="_blank"
-              className="link-hover"
-            >
-              TailwindCSS
-            </a>
-            ,{" "}
-            <a
-              href="https://daisyui.com"
-              target="_blank"
-              className="link-hover"
-            >
-              daisyUI
-            </a>
-            ,{" "}
-            <a
-              href="https://aws.amazon.com/s3/"
-              target="_blank"
-              className="link-hover"
-            >
-              Amazon S3
-            </a>
-            ,{" "}
-            <a
-              href="https://aws.amazon.com/cloudfront/"
-              target="_blank"
-              className="link-hover"
-            >
-              CloudFront
-            </a>
-            , and{" "}
-            <Link href="/about" className="link-hover">
-              more!
-            </Link>
-          </p>
-        </aside>
-      </footer>
     </Layout>
   );
 }
