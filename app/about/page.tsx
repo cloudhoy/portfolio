@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <Layout>
-      <h1 className="full-width bg-neutral p-4 pt-12 md:pt-20 text-xl font-medium">
+      <h1 className="full-width bg-neutral p-4 pt-16 md:pt-20 text-xl font-medium">
         About
       </h1>
       <section className="full-width p-4">

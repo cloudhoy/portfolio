@@ -12,13 +12,15 @@ const Layout = ({ className, children }: LayoutProps) => {
     { text: "Men", href: "/", icon: <Gift /> },
     { text: "Women", href: "/", icon: <Heart /> },
     { text: "Children", href: "/", icon: <Truck /> },
-    { text: "Explore", href: "/", icon: <Grid />},
+    { text: "Explore", href: "/", icon: <Grid /> },
   ];
-  
+
   return (
-    <div className="min-h-screen antialiased">
+    <div className="flex flex-col min-h-screen antialiased">
       <Header navItems={navItems} />
-      <main className={`content-grid ${className ?? ""}`}>{children}</main>
+      <div className="grow">
+        <main className={`content-grid ${className ?? ""}`}>{children}</main>
+      </div>
       <Footer className="px-4 py-8" />
     </div>
   );
