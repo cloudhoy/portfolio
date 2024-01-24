@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import Header, { NavItem } from "./Header";
 import { Gift, Grid, Heart, Truck } from "react-feather";
+import Footer from "./Footer";
 
 export type LayoutProps = PropsWithChildren & {
   className?: string;
@@ -8,16 +9,19 @@ export type LayoutProps = PropsWithChildren & {
 
 const Layout = ({ className, children }: LayoutProps) => {
   const navItems: NavItem[] = [
-    // { text: "Men", href: "/", icon: <Gift /> },
-    // { text: "Women", href: "/", icon: <Heart /> },
-    // { text: "Children", href: "/", icon: <Truck /> },
-    // { text: "Explore", href: "/", icon: <Grid />},
+    { text: "Men", href: "/", icon: <Gift /> },
+    { text: "Women", href: "/", icon: <Heart /> },
+    { text: "Children", href: "/", icon: <Truck /> },
+    { text: "Explore", href: "/", icon: <Grid /> },
   ];
-  
+
   return (
-    <div className="min-h-screen antialiased">
+    <div className="flex flex-col min-h-screen antialiased">
       <Header navItems={navItems} />
-      <main className={`content-grid ${className ?? ""}`}>{children}</main>
+      <div className="grow">
+        <main className={`content-grid ${className ?? ""}`}>{children}</main>
+      </div>
+      <Footer className="px-4 py-8" />
     </div>
   );
 };
