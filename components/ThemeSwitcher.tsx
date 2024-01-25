@@ -35,8 +35,8 @@ const ThemeSwitcher = ({ className, showLabel }: ThemeSwitcherProps) => {
       ref={myref}
       onClick={toggleTheme}
     >
-      <Sun className="swap-on fill-current" />
-      <Moon className="swap-off fill-current" />
+      <Sun className="swap-on" />
+      <Moon className="swap-off" />
       {showLabel && <span className="col-start-2">{label}</span>}
     </label>
   );

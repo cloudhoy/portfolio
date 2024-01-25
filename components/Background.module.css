@@ -1,6 +1,8 @@
 .background {
+  @apply -z-10;
+
   &::after {
-    @apply content-[''] fixed inset-0 -z-10 mix-blend-soft-light;
+    @apply content-[''] fixed inset-0 -z-10 mix-blend-hard-light;
 
     background-size: 100% 100%;
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
@@ -25,8 +27,14 @@
   }
 }
 
+[data-theme="dark"] .background {
+  &::after {
+    @apply mix-blend-soft-light;
+  }
+}
+
 .cursor {
-  @apply fixed w-96 h-96 bg-white -z-10 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-15 blur-3xl;
+  @apply hidden md:block fixed w-96 h-96 bg-white -z-10 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-15 blur-3xl;
 }
 
 @keyframes rotateHue {

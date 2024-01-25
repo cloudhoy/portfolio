@@ -3,11 +3,11 @@
 import { animated, useInView } from "@react-spring/web";
 import { PropsWithChildren } from "react";
 
-export type FadeInProps = PropsWithChildren & {
+export type FadeInViewProps = PropsWithChildren & {
     className?: string;
 };
 
-const FadeIn = ({ children, className }: FadeInProps) => {
+const FadeInView = ({ children, className }: FadeInViewProps) => {
   const [ref, springs] = useInView(
     () => ({
       from: {
@@ -20,7 +20,7 @@ const FadeIn = ({ children, className }: FadeInProps) => {
       },
     }),
     {
-        rootMargin: '-40% 0%',
+        rootMargin: '-30% 0%',
         once: true,
     }
   );
@@ -32,4 +32,4 @@ const FadeIn = ({ children, className }: FadeInProps) => {
   );
 };
 
-export default FadeIn;
+export default FadeInView;

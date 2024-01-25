@@ -17,7 +17,7 @@ const Layout = ({ className, children }: LayoutProps) => {
 
   return (
     <>
-      <Background />
+    <Background />
       <div className="flex flex-col min-h-screen antialiased">
         <Header navItems={navItems} />
         <div className="grow">

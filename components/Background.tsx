@@ -7,7 +7,7 @@ const Background = () => {
   const [mouse] = useMouse();
   return (
     <>
-      <div className="fixed inset-0 overflow-hidden">
+      <div className="fixed inset-0 overflow-hidden -z-10">
         <div
           className={styles.cursor}
           style={{ left: mouse.x, top: mouse.y }}
