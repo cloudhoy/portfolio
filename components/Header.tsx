@@ -3,9 +3,7 @@
 import Link from "next/link";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Logo from "./svg/Logo";
-import Searcher from "./Searcher";
-import Cart from "./Cart";
-import { BarChart, GitHub, Linkedin, Mail, Menu, X } from "react-feather";
+import { BarChart, GitHub, Linkedin, Mail, X } from "react-feather";
 import { ReactNode } from "react";
 import useLastScrollDirection from "@/hooks/useLastScrollDirection";
 

@@ -2,7 +2,6 @@ import { PropsWithChildren } from "react";
 import Header, { NavItem } from "./Header";
 import { Gift, GitBranch, Heart } from "react-feather";
 import Footer from "./Footer";
-import Background from "./Background";
 
 export type LayoutProps = PropsWithChildren & {
   className?: string;
@@ -17,7 +16,6 @@ const Layout = ({ className, children }: LayoutProps) => {
 
   return (
     <>
-    <Background />
       <div className="flex flex-col min-h-screen antialiased">
         <Header navItems={navItems} />
         <div className="grow">

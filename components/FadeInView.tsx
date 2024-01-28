@@ -12,7 +12,7 @@ const FadeInView = ({ children, className }: FadeInViewProps) => {
     () => ({
       from: {
         opacity: 0,
-        y: 50,
+        y: 16,
       },
       to: {
         opacity: 1,
