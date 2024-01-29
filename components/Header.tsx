@@ -26,7 +26,7 @@ const Header = ({ navItems }: HeaderProps) => {
     <div className="drawer drawer-end">
       <input id="sidebar" type="checkbox" className="drawer-toggle" />
       <header
-        className={`fixed top-0 left-0 right-0 md:absolute z-20 transition-transform duration-300 ${
+        className={`fixed top-0 left-0 right-0 md:absolute z-30 transition-transform duration-300 ${
           lastScrollYDirection === "down"
             ? "-translate-y-full md:translate-y-0"
             : ""
@@ -81,7 +81,7 @@ const Header = ({ navItems }: HeaderProps) => {
             <ul className="menu p-0 gap-2 font-medium">
               {navItems?.map((nav) => (
                 <li key={`${nav.text}${nav.href}`}>
-                  <a href={nav.href}>
+                  <a href={nav.href} tabIndex={-1}>
                     {nav.icon && <span className="pr-2">{nav.icon}</span>}
                     {nav.text}
                   </a>
@@ -97,6 +97,7 @@ const Header = ({ navItems }: HeaderProps) => {
                     href="https://www.linkedin.com/in/tcheong/"
                     target="_blank"
                     className="btn btn-square btn-ghost"
+                    tabIndex={-1}
                   >
                     <Linkedin />
                   </a>
@@ -106,6 +107,7 @@ const Header = ({ navItems }: HeaderProps) => {
                     href="https://github.com/cloudhoy"
                     target="_blank"
                     className="btn btn-square btn-ghost"
+                    tabIndex={-1}
                   >
                     <GitHub />
                   </a>
@@ -115,13 +117,14 @@ const Header = ({ navItems }: HeaderProps) => {
                     href="mailto:wanhoy.cheong@gmail.com"
                     target="_blank"
                     className="btn btn-square btn-ghost"
+                    tabIndex={-1} 
                   >
                     <Mail />
                   </a>
                 </li>
                 <div className="divider divider-horizontal mx-0"></div>
                 <li>
-                  <ThemeSwitcher className="btn-square btn-ghost" />
+                  <ThemeSwitcher className="btn-square btn-ghost" focusable={false} />
                 </li>
               </ul>
             </address>
