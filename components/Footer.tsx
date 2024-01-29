@@ -9,7 +9,7 @@ const Footer = ({ className }: FooterProps) => {
     <footer
       className={`footer text-xs text-muted ${className}`}
     >
-      <aside className="w-full max-w-screen-xl mx-auto place-items-end text-end">
+      <aside className="w-full max-w-screen-xl mx-auto place-items-center text-center">
         <p className="leading-tight">
           Designed & built with 💖 by{" "}
           <a href="https://www.linkedin.com/in/tcheong/" className="link-hover">

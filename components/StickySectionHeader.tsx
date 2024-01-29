@@ -38,8 +38,8 @@ const StickySectionHeader = ({
   return (
     <div
       ref={ref as RefObject<HTMLDivElement>}
-      className={`sticky md:relative top-[-1px] pt-[calc(1em+1px)] pb-4 z-20 ${
-        isStickyAndNavVisible ? "backdrop-blur-none" : "backdrop-blur-sm"
+      className={`sticky md:relative top-[-1px] pt-[calc(1em+1px)] pb-4 -ml-4 -mr-4 px-4 ${
+        isStickyAndNavVisible ? "z-20 backdrop-blur-none" : "backdrop-blur-sm md:backdrop-blur-none"
       }`}
     >
       <a.div

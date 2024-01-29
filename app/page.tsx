@@ -70,7 +70,7 @@ export default function Page() {
           </p>
         </div>
       </section>
-      <section className="full-width">
+      <section className="full-width bg-neutral">
         <div className="p-4 md:p-8 *:leading-loose">
           <StickySectionHeader>
             <h2
@@ -78,6 +78,48 @@ export default function Page() {
               className="text-base uppercase font-bold tracking-wider"
             >
               Experience
+            </h2>
+          </StickySectionHeader>
+          <p className="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            distinctio tenetur quas autem et. Dolorum a voluptatibus pariatur
+            dolore nobis quidem consequatur blanditiis esse commodi ea,
+            cupiditate saepe deserunt! Dignissimos?
+          </p>
+          <p className="mb-4">
+            Dolore perferendis reiciendis eius quos vitae in nisi quisquam.
+            Expedita consequuntur minus reiciendis quam alias vel, deleniti
+            nobis, aspernatur, voluptatibus eligendi ducimus sunt aliquam quae
+            blanditiis dolor. Autem, numquam nisi?
+          </p>
+          <p className="mb-4">
+            Fuga ullam omnis odit labore quia quos. Dignissimos porro vitae vero
+            quod quae, exercitationem veniam facilis ea impedit unde delectus?
+            Libero dolores, officiis omnis soluta modi totam laudantium expedita
+            voluptate?
+          </p>
+          <p className="mb-4">
+            Eum voluptatum voluptas consequatur, facere quam minus, eveniet ad
+            adipisci veniam commodi dolores nemo ipsum consequuntur mollitia
+            explicabo porro maxime consectetur, voluptates saepe ipsam vel iste
+            dolorem fugit? Soluta, deleniti!
+          </p>
+          <p className="mb-4">
+            Expedita veritatis reiciendis cupiditate neque sequi unde quos ut
+            architecto modi incidunt velit quia dolores tenetur quae omnis
+            beatae, vel porro quod praesentium, sapiente perferendis
+            voluptatibus. Perspiciatis eveniet maiores enim.
+          </p>
+        </div>
+      </section>
+      <section className="full-width bg-neutral">
+        <div className="p-4 md:p-8 *:leading-loose">
+          <StickySectionHeader>
+            <h2
+              id="contact"
+              className="text-base uppercase font-bold tracking-wider"
+            >
+              Contact
             </h2>
           </StickySectionHeader>
           <p className="mb-4">
