@@ -30,9 +30,9 @@ const TitleAnimated = ({ children }: TitleAnimatedProps) => {
         }}
         style={{
           textShadow: props.x
-            .to([0, 1], [0, 0.3])
-            .to((val) => `-${val}rem 0 red, ${val}rem 0 cyan`),
-          letterSpacing: props.x.to([0, 1], [0, 0.6]).to((val) => `${val}em`),
+            .to([0, 1], [0, 0.2])
+            .to((val) => `-${val}em 0 red, ${val}em 0 cyan`),
+          letterSpacing: props.x.to([0, 1], [0, 0.5]).to((val) => `${val}em`),
           scale: props.scale.to([0, 1], [1, 1.05]),
         }}
       >

@@ -32,16 +32,16 @@ const Header = ({ navItems }: HeaderProps) => {
             : ""
         }`}
       >
-        <nav className="navbar px-2 md:p-4 w-full max-w-screen-lg mx-auto justify-between backdrop-blur-sm md:backdrop-blur-0">
+        <nav className="navbar px-2 md:p-4 w-full max-w-screen-lg mx-auto justify-between text-amped backdrop-blur-sm md:backdrop-blur-0">
           <Link
             href="/"
-            className="text-2xl h-10 w-10 grid place-items-center mr-2 "
+            className="text-2xl h-10 w-10 grid place-items-center mr-2"
           >
             <Logo />
           </Link>
-          <ul className="menu menu-horizontal font-semibold uppercase tracking-wide hidden md:flex gap-8">
+          <ul className="menu menu-horizontal hidden md:flex gap-8">
             {navItems?.map((nav) => (
-              <li key={`${nav.text}${nav.href}`}>
+              <li key={`${nav.text}${nav.href}`} className="font-semibold uppercase tracking-wide">
                 <Link href={nav.href} className={nav.className}>{nav.text}</Link>
               </li>
             ))}

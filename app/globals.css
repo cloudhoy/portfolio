@@ -75,7 +75,20 @@ body {
 }
 
 [data-theme="dark"] .text-muted {
-  @apply text-slate-400;
+  @apply text-slate-500;
+}
+
+.text-amped {
+  @apply text-gray-800;
+
+  .link:hover,
+  .link-hover {
+    @apply text-base-content;
+  }
+}
+
+[data-theme="dark"] .text-amped {
+  @apply text-gray-200;
 }
 
 

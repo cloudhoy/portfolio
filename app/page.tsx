@@ -1,5 +1,6 @@
 import Experience from "@/components/Experience";
 import FadeInView from "@/components/FadeInView";
+import GroupedCardList from "@/components/GroupedCardList";
 import Layout from "@/components/Layout";
 import StickySectionHeader from "@/components/StickySectionHeader";
 import TitleAnimated from "@/components/TitleAnimated";
@@ -12,24 +13,27 @@ export default function Page() {
         <div className="w-full h-full md:px-4 grid place-items-center text-center">
           <div className="w-full">
             <TitleAnimated>
-              <h1 className="font-black text-5xl md:text-7xl font-sans-display uppercase leading-tight mb-4">
+              <h1 className="font-black text-amped text-5xl md:text-7xl font-sans-display uppercase leading-tight mb-4">
                 Tony Cheong
               </h1>
             </TitleAnimated>
             <FadeInView>
-              <div className="text-xl md:text-2xl uppercase tracking-wide">
+              <div className="text-lg uppercase md:text-xl tracking-wide">
                 Software Engineer
               </div>
             </FadeInView>
           </div>
           <div className="absolute bottom-4">
             <a href="#about">
-              <ChevronDown className="animate-bounce" />
+              <ChevronDown className="animate-bounce w-8 h-8" />
             </a>
           </div>
         </div>
       </section>
-      <section id="about" className="full-width bg-neutral -scroll-mt-5 md:scroll-mt-0">
+      <section
+        id="about"
+        className="full-width bg-neutral -scroll-mt-5 md:scroll-mt-0"
+      >
         <div className="p-4 md:p-8 *:leading-loose">
           <StickySectionHeader>
             <h2 className="text-base uppercase font-bold tracking-wider">
@@ -37,34 +41,34 @@ export default function Page() {
             </h2>
           </StickySectionHeader>
           <p className="mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            distinctio tenetur quas autem et. Dolorum a voluptatibus pariatur
-            dolore nobis quidem consequatur blanditiis esse commodi ea,
-            cupiditate saepe deserunt! Dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+            ducimus repudiandae libero. Quam illo libero animi dolorum quos
+            sequi. Omnis voluptatibus earum iusto animi incidunt impedit
+            corrupti tempora necessitatibus sequi?
           </p>
           <p className="mb-4">
-            Dolore perferendis reiciendis eius quos vitae in nisi quisquam.
-            Expedita consequuntur minus reiciendis quam alias vel, deleniti
-            nobis, aspernatur, voluptatibus eligendi ducimus sunt aliquam quae
-            blanditiis dolor. Autem, numquam nisi?
+            Qui, voluptate nemo iste facilis temporibus consequatur illo, modi
+            incidunt fuga commodi, architecto fugit voluptas laudantium natus
+            officiis atque quasi mollitia deserunt quo itaque tempora.
+            Distinctio in doloremque saepe et!
           </p>
           <p className="mb-4">
-            Fuga ullam omnis odit labore quia quos. Dignissimos porro vitae vero
-            quod quae, exercitationem veniam facilis ea impedit unde delectus?
-            Libero dolores, officiis omnis soluta modi totam laudantium expedita
-            voluptate?
+            Recusandae consequatur doloremque necessitatibus impedit vel eos
+            molestiae repellat illo officiis sit. Deleniti ut ipsum deserunt
+            molestiae eum consequatur velit, dignissimos quo minima, tenetur
+            dolor quos quae illo porro dolore.
           </p>
           <p className="mb-4">
-            Eum voluptatum voluptas consequatur, facere quam minus, eveniet ad
-            adipisci veniam commodi dolores nemo ipsum consequuntur mollitia
-            explicabo porro maxime consectetur, voluptates saepe ipsam vel iste
-            dolorem fugit? Soluta, deleniti!
+            Inventore, et non culpa mollitia tempora quas! Itaque, repellat,
+            quibusdam atque incidunt omnis fugiat expedita libero temporibus
+            eveniet ea praesentium fugit unde in veniam hic necessitatibus
+            obcaecati adipisci quam! Corrupti!
           </p>
           <p className="mb-4">
-            Expedita veritatis reiciendis cupiditate neque sequi unde quos ut
-            architecto modi incidunt velit quia dolores tenetur quae omnis
-            beatae, vel porro quod praesentium, sapiente perferendis
-            voluptatibus. Perspiciatis eveniet maiores enim.
+            Aliquam at, animi quis voluptatibus sit a excepturi unde modi culpa
+            eveniet quod quisquam ad, quia ipsa ipsum accusantium eligendi velit
+            dolorem, accusamus minima tempore libero? Sit quaerat obcaecati
+            itaque.
           </p>
         </div>
       </section>
@@ -75,7 +79,9 @@ export default function Page() {
               Experience
             </h2>
           </StickySectionHeader>
-          <Experience
+          <GroupedCardList />
+
+          {/* <Experience
             title="Software Engineer | Anacle Systems Ltd"
             imageSrc="/fusionopolis-one-exterior.jpg"
             imageAlt="exterior of high-rise office building from street level looking upwards"
@@ -94,7 +100,7 @@ export default function Page() {
               Designed solution with Enterprise Resource Planning (ERP) software
               for leading real estate companies.
             </p>
-          </Experience>
+          </Experience> */}
         </div>
       </section>
       <section id="contact" className="full-width bg-neutral">
@@ -105,34 +111,34 @@ export default function Page() {
             </h2>
           </StickySectionHeader>
           <p className="mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            distinctio tenetur quas autem et. Dolorum a voluptatibus pariatur
-            dolore nobis quidem consequatur blanditiis esse commodi ea,
-            cupiditate saepe deserunt! Dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+            ducimus repudiandae libero. Quam illo libero animi dolorum quos
+            sequi. Omnis voluptatibus earum iusto animi incidunt impedit
+            corrupti tempora necessitatibus sequi?
           </p>
           <p className="mb-4">
-            Dolore perferendis reiciendis eius quos vitae in nisi quisquam.
-            Expedita consequuntur minus reiciendis quam alias vel, deleniti
-            nobis, aspernatur, voluptatibus eligendi ducimus sunt aliquam quae
-            blanditiis dolor. Autem, numquam nisi?
+            Qui, voluptate nemo iste facilis temporibus consequatur illo, modi
+            incidunt fuga commodi, architecto fugit voluptas laudantium natus
+            officiis atque quasi mollitia deserunt quo itaque tempora.
+            Distinctio in doloremque saepe et!
           </p>
           <p className="mb-4">
-            Fuga ullam omnis odit labore quia quos. Dignissimos porro vitae vero
-            quod quae, exercitationem veniam facilis ea impedit unde delectus?
-            Libero dolores, officiis omnis soluta modi totam laudantium expedita
-            voluptate?
+            Recusandae consequatur doloremque necessitatibus impedit vel eos
+            molestiae repellat illo officiis sit. Deleniti ut ipsum deserunt
+            molestiae eum consequatur velit, dignissimos quo minima, tenetur
+            dolor quos quae illo porro dolore.
           </p>
           <p className="mb-4">
-            Eum voluptatum voluptas consequatur, facere quam minus, eveniet ad
-            adipisci veniam commodi dolores nemo ipsum consequuntur mollitia
-            explicabo porro maxime consectetur, voluptates saepe ipsam vel iste
-            dolorem fugit? Soluta, deleniti!
+            Inventore, et non culpa mollitia tempora quas! Itaque, repellat,
+            quibusdam atque incidunt omnis fugiat expedita libero temporibus
+            eveniet ea praesentium fugit unde in veniam hic necessitatibus
+            obcaecati adipisci quam! Corrupti!
           </p>
           <p className="mb-4">
-            Expedita veritatis reiciendis cupiditate neque sequi unde quos ut
-            architecto modi incidunt velit quia dolores tenetur quae omnis
-            beatae, vel porro quod praesentium, sapiente perferendis
-            voluptatibus. Perspiciatis eveniet maiores enim.
+            Aliquam at, animi quis voluptatibus sit a excepturi unde modi culpa
+            eveniet quod quisquam ad, quia ipsa ipsum accusantium eligendi velit
+            dolorem, accusamus minima tempore libero? Sit quaerat obcaecati
+            itaque.
           </p>
         </div>
       </section>
