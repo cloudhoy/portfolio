@@ -4,8 +4,9 @@ import Link from "next/link";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Logo from "./svg/Logo";
 import { BarChart, GitHub, Linkedin, Mail, X } from "react-feather";
-import { ReactNode } from "react";
+import { ChangeEvent, ReactNode, useState } from "react";
 import useLastScrollDirection from "@/hooks/useLastScrollDirection";
+import useActiveSection from "@/hooks/useActiveSection";
 
 export type HeaderProps = {
   navItems?: NavItem[];
@@ -16,15 +17,26 @@ export type NavItem = {
   href: string;
   className?: string;
   icon?: ReactNode;
-
 };
 
 const Header = ({ navItems }: HeaderProps) => {
   const [lastScrollXDirection, lastScrollYDirection] = useLastScrollDirection();
+  const activeSection = useActiveSection();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const handleSidebarChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setIsSidebarOpen(e.target.checked);
+  };
 
   return (
     <div className="drawer drawer-end">
-      <input id="sidebar" type="checkbox" className="drawer-toggle" />
+      <input
+        id="sidebar"
+        type="checkbox"
+        className="drawer-toggle"
+        checked={isSidebarOpen}
+        onChange={handleSidebarChange}
+      />
       <header
         className={`fixed top-0 left-0 right-0 md:absolute z-30 transition-transform duration-300 ${
           lastScrollYDirection === "down"
@@ -32,7 +44,11 @@ const Header = ({ navItems }: HeaderProps) => {
             : ""
         }`}
       >
-        <nav className="navbar px-2 md:p-4 w-full max-w-screen-lg mx-auto justify-between text-amped backdrop-blur-sm md:backdrop-blur-0">
+        <nav
+          className={`navbar px-2 md:p-4 w-full max-w-screen-lg mx-auto 
+          justify-between text-amped backdrop-blur-sm md:backdrop-blur-0
+          ${activeSection !== 'home' ? 'shadow-md' : ''}`}
+        >
           <Link
             href="/"
             className="text-2xl h-10 w-10 grid place-items-center mr-2"
@@ -41,8 +57,18 @@ const Header = ({ navItems }: HeaderProps) => {
           </Link>
           <ul className="menu menu-horizontal hidden md:flex gap-8">
             {navItems?.map((nav) => (
-              <li key={`${nav.text}${nav.href}`} className="font-semibold uppercase tracking-wide">
-                <Link href={nav.href} className={nav.className}>{nav.text}</Link>
+              <li
+                key={`${nav.text}${nav.href}`}
+                className="font-semibold uppercase tracking-wide"
+              >
+                <Link
+                  href={nav.href}
+                  className={`${nav.className} ${
+                    nav.href === `#${activeSection}` ? "active" : ""
+                  }`}
+                >
+                  {nav.text}
+                </Link>
               </li>
             ))}
           </ul>
@@ -81,7 +107,14 @@ const Header = ({ navItems }: HeaderProps) => {
             <ul className="menu p-0 gap-2 font-medium">
               {navItems?.map((nav) => (
                 <li key={`${nav.text}${nav.href}`}>
-                  <a href={nav.href} tabIndex={-1}>
+                  <a
+                    href={nav.href}
+                    tabIndex={-1}
+                    className={`${
+                      nav.href === `#${activeSection}` ? "active" : ""
+                    }`}
+                    onClick={() => setIsSidebarOpen(false)}
+                  >
                     {nav.icon && <span className="pr-2">{nav.icon}</span>}
                     {nav.text}
                   </a>
@@ -117,14 +150,17 @@ const Header = ({ navItems }: HeaderProps) => {
                     href="mailto:wanhoy.cheong@gmail.com"
                     target="_blank"
                     className="btn btn-square btn-ghost"
-                    tabIndex={-1} 
+                    tabIndex={-1}
                   >
                     <Mail />
                   </a>
                 </li>
                 <div className="divider divider-horizontal mx-0"></div>
                 <li>
-                  <ThemeSwitcher className="btn-square btn-ghost" focusable={false} />
+                  <ThemeSwitcher
+                    className="btn-square btn-ghost"
+                    focusable={false}
+                  />
                 </li>
               </ul>
             </address>
