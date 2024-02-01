@@ -31,7 +31,8 @@ const FadeInView = ({
   }));
 
   useEffect(() => {
-    api.start((index) => ({ opacity: 1, y: 0, delay: (index + 1) * delay }));
+    if (inView)
+      api.start((index) => ({ opacity: 1, y: 0, delay: (index + 1) * delay }));
   }, [api, delay, inView]);
 
   return (

@@ -40,19 +40,34 @@ export default function Page() {
             </h2>
           </StickySectionHeader>
           <FadeInView delay={300}>
-            <p className="mb-4">I started my journey</p>
             <p className="mb-4">
-              Qui, voluptate nemo iste facilis temporibus consequatur illo, modi
-              incidunt fuga commodi, architecto fugit voluptas laudantium natus
-              officiis atque quasi mollitia deserunt quo itaque tempora.
-              Distinctio in doloremque saepe et!
+              I am a seasoned software engineer with seven years of experience
+              specializing in web application development. My drive to create
+              meaningful solutions and fascination with technology fueled my
+              journey into the world of software engineering.
             </p>
-            <p>
-              Recusandae consequatur doloremque necessitatibus impedit vel eos
-              molestiae repellat illo officiis sit. Deleniti ut ipsum deserunt
-              molestiae eum consequatur velit, dignissimos quo minima, tenetur
-              dolor quos quae illo porro dolore.
+            <p className="mb-4">
+              Over the course of my career, I've honed my skills in both
+              front-end and back-end development, mastering various of
+              technologies and frameworks such as C#, .NET framework, Next.js,
+              React, and Angular, to name a few.
             </p>
+            <p className="mb-4">
+              I thrive in environments where collaboration and creativity are
+              encouraged, and I've had the pleasure of working alongside
+              talented teams to deliver a variety of high-quality software
+              solutions, ranging from simple websites to large-scale enterprise
+              solutions.
+            </p>
+            <p className="mb-4">
+              In my free time, I'm usually watching YouTube videos, reading
+              manga, hanging out and gaming with friends, or working on side
+              projects.
+            </p>
+
+            <div>
+              <h3>My Values</h3>
+            </div>
           </FadeInView>
         </div>
       </section>
@@ -85,6 +100,7 @@ export default function Page() {
           <p className="mb-8">Let&apos;s work together. Get in touch 👇</p>
           <FadeInView
             delay={300}
+            rootMargin="-10% 0%"
             className="flex flex-col md:flex-row md:min-h-24 items-center gap-4"
           >
             <address>
