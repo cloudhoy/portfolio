@@ -1,6 +1,6 @@
 "use client";
 
-import { PropsWithChildren, useState } from "react";
+import { PropsWithChildren, use, useEffect, useState } from "react";
 import { a, to, useSpring } from "@react-spring/web";
 
 export type TitleAnimatedProps = PropsWithChildren & {};
@@ -12,6 +12,7 @@ const TitleAnimated = ({ children }: TitleAnimatedProps) => {
     scale: 0,
     config: { mass: 10, tension: 550, friction: 70 },
   }));
+
   return (
     <div className="w-full grid place-items-center overflow-hidden">
       <a.div
@@ -20,7 +21,7 @@ const TitleAnimated = ({ children }: TitleAnimatedProps) => {
           setClicked((state) => !state);
           // react spring api start animating after state is updated,
           // so we check if !clicked
-          api.start({ x: !clicked ? 1 : 0 }); 
+          api.start({ x: !clicked ? 1 : 0 });
         }}
         onMouseEnter={() => {
           api.start({ scale: 1 });

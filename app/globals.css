@@ -98,11 +98,6 @@ body {
 }
 
 
-[data-theme="dark"] .drop-shadow-2xl {
-  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(255 255 255 / 0.15));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .bg-vignette {
   background-image: radial-gradient(farthest-corner circle at 50% 50%, rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 50%, rgba(0, 0, 0, .25) 120%);
   background-size: 200%;
