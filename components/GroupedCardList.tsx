@@ -1,8 +1,12 @@
-const GroupedCardList = () => {
+export type GroupedCardListProps = {
+  className?: string;
+};
+
+const GroupedCardList = ({ className }: GroupedCardListProps) => {
   return (
-    <ul className="group flex flex-col gap-12">
+    <ul className={`group/list flex flex-col gap-12 ${className}`}>
       <li>
-        <div className="md:flex md:items-start gap-8">
+        <div className="md:p-4 md:flex md:items-start gap-8 md:hover:!opacity-100 md:group-hover/list:opacity-50">
           <div className="uppercase text-sm text-muted shrink-0 leading-10 min-w-32">
             2022 — Present
           </div>
@@ -18,21 +22,20 @@ const GroupedCardList = () => {
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="badge badge-info badge-outline">C#</span>
-              <span className="badge badge-secondary badge-outline">
+              <span className="badge badge-info badge-outline">SQL</span>
+              <span className="badge badge-success badge-outline">
                 .NET Framework
               </span>
+              <span className="badge badge-success badge-outline">ASP.NET</span>
               <span className="badge badge-secondary badge-outline">
-                Next.js
+                SQL Server
               </span>
-              <span className="badge badge-secondary badge-outline">React</span>
-              <span className="badge badge-info badge-outline">Typescript</span>
-              <span className="badge badge-accent badge-outline">AWS S3</span>
             </div>
           </div>
         </div>
       </li>
       <li>
-        <div className="md:flex md:items-start gap-8 ">
+        <div className="md:p-4 md:flex md:items-start gap-8 md:hover:!opacity-100 md:group-hover/list:opacity-50">
           <div className="uppercase text-sm text-muted shrink-0 leading-10 min-w-32">
             2017 — 2022
           </div>
@@ -48,15 +51,25 @@ const GroupedCardList = () => {
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="badge badge-info badge-outline">C#</span>
-              <span className="badge badge-secondary badge-outline">
+              <span className="badge badge-info badge-outline">HTML</span>
+              <span className="badge badge-info badge-outline">CSS</span>
+              <span className="badge badge-info badge-outline">Typescript</span>
+              <span className="badge badge-info badge-outline">jQuery</span>
+              <span className="badge badge-info badge-outline">SQL</span>
+              <span className="badge badge-success badge-outline">React</span>
+              <span className="badge badge-success badge-outline">
+                AngularJS
+              </span>
+              <span className="badge badge-success badge-outline">
                 .NET Framework
               </span>
-              <span className="badge badge-secondary badge-outline">
-                Next.js
+              <span className="badge badge-success badge-outline">
+                SharePoint 2019
               </span>
-              <span className="badge badge-secondary badge-outline">React</span>
-              <span className="badge badge-info badge-outline">Typescript</span>
-              <span className="badge badge-accent badge-outline">AWS S3</span>
+              <span className="badge badge-success badge-outline">SPFX</span>
+              <span className="badge badge-secondary badge-outline">
+                SQL Server
+              </span>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Layout = ({ className, children }: LayoutProps) => {
   const navItems: NavItem[] = [
     { text: "About", href: "#about" },
     { text: "Experience", href: "#experience" },
-    { text: "Values", href: "#values" },
+    { text: "Values", href: "#values" },  
     { text: "Projects", href: "#projects" },
     { text: "Contact", href: "#contact" },
   ];

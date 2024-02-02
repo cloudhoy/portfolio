@@ -1,0 +1,27 @@
+{
+  "tags": [
+    { "id": "csharp", "name": "C#" },
+    { "id": "html", "name": "HTML" },
+    { "id": "javascript", "name": "Javascript" },
+    { "id": "jquery", "name": "jQuery" },
+    { "id": "typescript", "name": "Typescript" },
+    { "id": "css", "name": "CSS" },
+    { "id": "react", "name": "React" },
+    { "id": "nextjs", "name": "Next.js" },
+    { "id": "angularjs", "name": "AngularJS" },
+    { "id": "sql", "name": "SQL" },
+    { "id": "dotnetframework", "name": ".NET Framework" },
+    { "id": "sharepoint2019", "name": "SharePoint 2019" },
+    { "id": "spfx", "name": "SPFX" }
+  ],
+  "projects": [
+    {
+      "id": "portfolio",
+      "name": "tonycheong.com",
+      "description": "",
+      "image": "",
+      "href": "",
+      "tags": []
+    }
+  ]
+}

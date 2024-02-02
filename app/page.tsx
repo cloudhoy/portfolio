@@ -6,6 +6,8 @@ import StickySectionHeader from "@/components/StickySectionHeader";
 import TitleAnimated from "@/components/TitleAnimated";
 import {
   ArrowDown,
+  ArrowRight,
+  ArrowUpRight,
   Award,
   BookOpen,
   ChevronDown,
@@ -20,6 +22,18 @@ export default function Page() {
   return (
     <Layout>
       <section id="home" className="full-width min-h-svh bg-vignette">
+        <div className="absolute inset-0 bg-dots -z-10">
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+        </div>
         <div className="w-full h-full md:px-4 grid place-items-center text-center">
           <div className="w-full">
             <TitleAnimated>
@@ -51,10 +65,9 @@ export default function Page() {
           </StickySectionHeader>
           <FadeInView delay={300}>
             <p className="mb-4">
-              I am a seasoned software engineer with seven years of experience
-              specializing in web application development. My drive to create
-              meaningful solutions and fascination with technology fueled my
-              journey into the world of software engineering.
+              My drive to create meaningful solutions and fascination with
+              technology fueled my journey into the world of software
+              engineering.
             </p>
             <p className="mb-4">
               Over the course of my career, I&apos;ve honed my skills in both
@@ -62,12 +75,16 @@ export default function Page() {
               technologies and frameworks such as C#, .NET framework, Next.js,
               React, and Angular, to name a few.
             </p>
-            <p className="">
+            <p className="mb-4">
               I thrive in environments where collaboration and creativity are
               encouraged, and I&apos;ve had the pleasure of working alongside
               talented teams to deliver a variety of high-quality software
               solutions, ranging from simple websites to large-scale enterprise
               solutions.
+            </p>
+            <p className="">
+              All in all I'm a simple guy that likes to work hard, create
+              impact, drive results, and vibe with the team.
             </p>
           </FadeInView>
         </div>
@@ -79,7 +96,15 @@ export default function Page() {
               Experience
             </h2>
           </StickySectionHeader>
-          <GroupedCardList />
+          <GroupedCardList className="mb-8" />
+          <a
+            href="/resume_tony_cheong.pdf"
+            target="_blank"
+            className="link-hover text-amped font-medium group"
+          >
+            See my full resume
+            <ArrowUpRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </a>
         </div>
       </section>
       <section id="values" className="full-width bg-neutral pt-8">
@@ -91,41 +116,47 @@ export default function Page() {
           </StickySectionHeader>
           <ul className="grid md:grid-flow-col gap-8 mt-8">
             <li>
-              <div className="flex flex-col items-center p-4">
-                <BookOpen className="text-amped w-8 h-8 mb-4 stroke-info" />
-                <h3 className="text-amped mb-2 font-medium text-center">
-                  Continuous Improvement
-                </h3>
-                <p className="text-sm text-center">
-                  I prioritize staying up-to-date with the latest technologies
-                  and best practices, and am eager to expand my knowledge and
-                  skill set.
-                </p>
-              </div>
+              <FadeInView>
+                <div className="flex flex-col items-center p-4">
+                  <BookOpen className="text-amped w-8 h-8 mb-4 stroke-info" />
+                  <h3 className="text-amped mb-2 font-medium text-center">
+                    Continuous Improvement
+                  </h3>
+                  <p className="text-sm text-center">
+                    I prioritize staying up-to-date with the latest technologies
+                    and best practices, and am eager to expand my knowledge and
+                    skill set.
+                  </p>
+                </div>
+              </FadeInView>
             </li>
             <li>
-              <div className="flex flex-col items-center p-4">
-                <Award className="text-amped w-8 h-8 mb-4 stroke-warning" />
-                <h3 className="text-amped mb-2 font-medium text-center">
-                  Integrity
-                </h3>
-                <p className="text-sm text-center">
-                  I strive to inspire trust by being ethically unyielding and
-                  honest, and taking responsibility for my actions.
-                </p>
-              </div>
+              <FadeInView delay={300}>
+                <div className="flex flex-col items-center p-4">
+                  <Award className="text-amped w-8 h-8 mb-4 stroke-warning" />
+                  <h3 className="text-amped mb-2 font-medium text-center">
+                    Integrity
+                  </h3>
+                  <p className="text-sm text-center">
+                    I strive to inspire trust by being ethically unyielding and
+                    honest, and taking responsibility for my actions.
+                  </p>
+                </div>
+              </FadeInView>
             </li>
             <li>
-              <div className="flex flex-col items-center p-4">
-                <Smile className="text-amped w-8 h-8 mb-4 stroke-success" />
-                <h3 className="text-amped mb-2 font-medium text-center">
-                  Passion
-                </h3>
-                <p className="text-sm text-center">
-                  I&apos;m committed, passionate, and always go above and
-                  beyond, aiming to exceed expectations in all aspects.
-                </p>
-              </div>
+              <FadeInView delay={600}>
+                <div className="flex flex-col items-center p-4">
+                  <Smile className="text-amped w-8 h-8 mb-4 stroke-success" />
+                  <h3 className="text-amped mb-2 font-medium text-center">
+                    Passion
+                  </h3>
+                  <p className="text-sm text-center">
+                    I&apos;m committed, passionate, and aim to exceed
+                    expectations and go above and beyond in all things.
+                  </p>
+                </div>
+              </FadeInView>
             </li>
           </ul>
         </div>
@@ -149,7 +180,14 @@ export default function Page() {
           <h2 className="text-base text-amped uppercase font-bold tracking-wider text-center">
             Contact
           </h2>
-          <p className="mb-4 text-center">Get in touch. Let&apos;s work together!</p>
+          <FadeInView>
+            <p className="text-center">
+              I am open to work and new opportunities!
+            </p>
+            <p className="mb-4 text-center">
+              Get in touch. Let&apos;s work together!
+            </p>
+          </FadeInView>
           <FadeInView
             delay={300}
             rootMargin="-10% 0%"
@@ -177,7 +215,7 @@ export default function Page() {
                 </li>
                 <li>
                   <a
-                    href="mailto:wanhoy.cheong@gmail.com"
+                    href="mailto:wanhoy.cheong@gmail.com?subject=%5Btonycheong.com%5D%20&body=Hi%20Tony%2C"
                     target="_blank"
                     className="btn btn-square btn-ghost text-amped"
                   >
@@ -193,7 +231,7 @@ export default function Page() {
               <a
                 href="/resume_tony_cheong.pdf"
                 download="tony cheong's resume"
-                className="btn btn-primary"
+                className="btn "
               >
                 Download Resume
               </a>
