@@ -19,7 +19,7 @@ const TitleAnimated = ({ children }: TitleAnimatedProps) => {
         className={`cursor-pointer inline-block`}
         onClick={() => {
           setClicked((state) => !state);
-          // react spring api start animating after state is updated,
+          // react spring api start animating only after state is updated,
           // so we check if !clicked
           api.start({ x: !clicked ? 1 : 0 });
         }}

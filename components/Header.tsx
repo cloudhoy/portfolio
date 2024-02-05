@@ -8,10 +8,6 @@ import { ChangeEvent, ReactNode, useState } from "react";
 import useLastScrollDirection from "@/hooks/useLastScrollDirection";
 import useActiveSection from "@/hooks/useActiveSection";
 
-export type HeaderProps = {
-  navItems?: NavItem[];
-};
-
 export type NavItem = {
   text: string;
   href: string;
@@ -19,7 +15,15 @@ export type NavItem = {
   icon?: ReactNode;
 };
 
-const Header = ({ navItems }: HeaderProps) => {
+const navItems: NavItem[] = [
+  { text: "About", href: "#about" },
+  { text: "Experience", href: "#experience" },
+  // { text: "Values", href: "#values" },  
+  { text: "Projects", href: "#projects" },
+  { text: "Contact", href: "#contact" },
+];
+
+const Header = () => {
   const [lastScrollXDirection, lastScrollYDirection] = useLastScrollDirection();
   const activeSection = useActiveSection();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

@@ -8,18 +8,12 @@ export type LayoutProps = PropsWithChildren & {
 };
 
 const Layout = ({ className, children }: LayoutProps) => {
-  const navItems: NavItem[] = [
-    { text: "About", href: "#about" },
-    { text: "Experience", href: "#experience" },
-    { text: "Values", href: "#values" },  
-    { text: "Projects", href: "#projects" },
-    { text: "Contact", href: "#contact" },
-  ];
+  
 
   return (
     <>
       <div className="flex flex-col min-h-screen antialiased">
-        <Header navItems={navItems} />
+        <Header />
         <div className="grow">
           <main className={`content-grid ${className ?? ""}`}>{children}</main>
         </div>

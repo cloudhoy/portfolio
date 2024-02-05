@@ -1,4 +1,4 @@
-import Experience from "@/components/Experience";
+import BubbleUpCubesBackground from "@/components/BubbleUpCubesBackground";
 import FadeInView from "@/components/FadeInView";
 import GroupedCardList from "@/components/GroupedCardList";
 import Layout from "@/components/Layout";
@@ -22,18 +22,7 @@ export default function Page() {
   return (
     <Layout>
       <section id="home" className="full-width min-h-svh bg-vignette">
-        <div className="absolute inset-0 bg-dots -z-10">
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-        </div>
+        <BubbleUpCubesBackground />
         <div className="w-full h-full md:px-4 grid place-items-center text-center">
           <div className="w-full">
             <TitleAnimated>
@@ -45,7 +34,7 @@ export default function Page() {
             </TitleAnimated>
             <FadeInView delay={500}>
               <div className="text-lg uppercase md:text-xl tracking-wide font-light">
-                Software Engineer
+                Software Engineer, Full Stack
               </div>
             </FadeInView>
           </div>
@@ -107,7 +96,7 @@ export default function Page() {
           </a>
         </div>
       </section>
-      <section id="values" className="full-width bg-neutral pt-8">
+      {/* <section id="values" className="full-width bg-neutral pt-8">
         <div className="p-4 md:p-8 *:leading-loose">
           <StickySectionHeader>
             <h2 className="text-base text-amped uppercase font-bold tracking-wider">
@@ -160,7 +149,7 @@ export default function Page() {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
       <section id="projects" className="full-width bg-neutral pt-8">
         <div className="p-4 md:p-8 *:leading-loose">
           <StickySectionHeader>
@@ -177,66 +166,68 @@ export default function Page() {
       </section>
       <section id="contact" className="full-width bg-neutral py-16">
         <div className="p-4 md:p-8 *:leading-loose">
-          <h2 className="text-base text-amped uppercase font-bold tracking-wider text-center">
+          <h2 className="text-base text-amped uppercase font-bold tracking-wider mb-4">
             Contact
           </h2>
-          <FadeInView>
-            <p className="text-center">
-              I am open to work and new opportunities!
-            </p>
-            <p className="mb-4 text-center">
-              Get in touch. Let&apos;s work together!
-            </p>
-          </FadeInView>
-          <FadeInView
-            delay={300}
-            rootMargin="-10% 0%"
-            className="flex flex-col md:flex-row items-center gap-4 justify-center"
-          >
-            <address>
-              <ul className="flex justify-around sm:justify-start gap-8">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/tcheong/"
-                    target="_blank"
-                    className="btn btn-square btn-ghost text-amped"
-                  >
-                    <Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/cloudhoy"
-                    target="_blank"
-                    className="btn btn-square btn-ghost text-amped"
-                  >
-                    <GitHub />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:wanhoy.cheong@gmail.com?subject=%5Btonycheong.com%5D%20&body=Hi%20Tony%2C"
-                    target="_blank"
-                    className="btn btn-square btn-ghost text-amped"
-                  >
-                    <Mail />
-                  </a>
-                </li>
-              </ul>
-            </address>
-            <div className="divider divider-vertical md:divider-horizontal text-muted">
-              or
+          <FadeInView rootMargin="-20% 0%">
+            <div className="card bg-base-100 from-base-200 outline-base-content/5 relative overflow-hidden bg-gradient-to-b shadow-lg outline -outline-offset-1 sm:flex-row-reverse">
+              <figure className="max-sm:bg-primary/10 isolate shrink-0 sm:w-3/5 max-h-[230px] !hidden sm:!flex">
+                <img
+                  className="pointer-events-none object-cover "
+                  alt="daisyUI store"
+                  src="/avatar_wide_nobg_2.png"
+                />
+              </figure>
+              <div className="bg-accent pointer-events-none absolute bottom-[-50%] -left-1/5 aspect-square w-3/4 -translate-x-1/2 rounded-full opacity-20 blur-3xl"></div>
+              <div className="bg-primary pointer-events-none absolute bottom-[-120%] left-1/2 aspect-square w-full -translate-x-1/2 rounded-full opacity-20 blur-3xl"></div>
+              <div className="bg-base-100 pointer-events-none absolute -top-3/4 right-1/4 z-[3] aspect-square w-1/2 rounded-full opacity-60 blur-3xl"></div>
+              <div className="card-body relative isolate z-[3] sm:w-2/5">
+                <h2 className="card-title text-base-content text-xl font-bold contrast-200 [text-wrap:balance] sm:w-[200%] md:text-2xl">
+                  <span>Get in touch</span>
+                </h2>
+                <div className="grow">
+                  <div className="text-lg leading-snug font-light sm:[text-wrap:balance] mb-4 sm:w-[200%]">
+                    <div className="mb-4">
+                      I am open to work and new opportunities. Let&apos;s work
+                      together!
+                    </div>
+                  </div>
+                </div>
+                <address>
+                  <ul className="flex justify-around sm:justify-start gap-8">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/tcheong/"
+                        target="_blank"
+                        className="btn btn-square btn-ghost text-amped"
+                      >
+                        <Linkedin />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/cloudhoy"
+                        target="_blank"
+                        className="btn btn-square btn-ghost text-amped"
+                      >
+                        <GitHub />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:wanhoy.cheong@gmail.com?subject=%5Btonycheong.com%5D%20&body=Hi%20Tony%2C"
+                        target="_blank"
+                        className="btn btn-square btn-ghost text-amped"
+                      >
+                        <Mail />
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
             </div>
-            <div>
-              <a
-                href="/resume_tony_cheong.pdf"
-                download="tony cheong's resume"
-                className="btn "
-              >
-                Download Resume
-              </a>
-            </div>
           </FadeInView>
+          
         </div>
       </section>
     </Layout>

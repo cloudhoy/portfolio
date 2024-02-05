@@ -1,18 +1,28 @@
+import { ArrowUpRight } from "react-feather";
+
 export type GroupedCardListProps = {
   className?: string;
 };
 
 const GroupedCardList = ({ className }: GroupedCardListProps) => {
   return (
-    <ul className={`group/list flex flex-col gap-12 ${className}`}>
+    <ul className={`group/list flex flex-col gap-4 ${className}`}>
       <li>
-        <div className="md:p-4 md:flex md:items-start gap-8 md:hover:!opacity-100 md:group-hover/list:opacity-50">
+        <div
+          className="md:px-4 py-8 md:flex md:items-start gap-8 md:hover:!opacity-100 md:group-hover/list:opacity-50 
+          outline-transparent rounded-box transition-all md:hover:bg-base-100/50
+          md:hover:outline md:hover:outline-base-content/5
+          md:hover:shadow-lg outline md:hover:-outline-offset-1"
+        >
           <div className="uppercase text-sm text-muted shrink-0 leading-10 min-w-32">
             2022 — Present
           </div>
           <div>
             <h3 className="font-medium text-amped mb-1">
+              <a href="https://anacle.com/" target="_blank" className="group"> 
               Software Engineer | Anacle Systems Ltd
+              <ArrowUpRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </a>
             </h3>
             <p className="mb-4 text-sm">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
@@ -35,13 +45,21 @@ const GroupedCardList = ({ className }: GroupedCardListProps) => {
         </div>
       </li>
       <li>
-        <div className="md:p-4 md:flex md:items-start gap-8 md:hover:!opacity-100 md:group-hover/list:opacity-50">
+        <div
+          className="md:px-4 py-8 md:flex md:items-start gap-8 md:hover:!opacity-100 md:group-hover/list:opacity-50 
+          outline-transparent rounded-box transition-all md:hover:bg-base-100/50
+          md:hover:outline md:hover:outline-base-content/5
+          md:hover:shadow-lg outline md:hover:-outline-offset-1"
+        >
           <div className="uppercase text-sm text-muted shrink-0 leading-10 min-w-32">
             2017 — 2022
           </div>
           <div>
             <h3 className="font-medium text-amped mb-1">
-              Full-Stack Developer | Alfacom Technologies M Sdn Bhd
+              <a href="https://www.alfacom.com.my/" target="_blank" className="group">
+                Full-Stack Developer | Alfacom Technologies M Sdn Bhd
+                <ArrowUpRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </a>
             </h3>
             <p className="mb-4 text-sm">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,

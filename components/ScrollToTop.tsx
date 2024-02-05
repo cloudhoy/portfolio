@@ -3,7 +3,7 @@
 import { a, useSpring } from "@react-spring/web";
 import { useWindowScroll } from "@uidotdev/usehooks";
 import { useEffect } from "react";
-import { ChevronUp } from "react-feather";
+import { ChevronUp, Minus } from "react-feather";
 
 const ScrollToTop = () => {
   const [{ x, y }, scrollTo] = useWindowScroll();
@@ -27,10 +27,11 @@ const ScrollToTop = () => {
     >
       <button
         type="button"
-        className="btn btn-sm btn-square btn-ghost btn-outline"
+        className="btn btn-sm btn-square btn-ghost btn-outline grid place-items-center"
         onClick={() => scrollTo({ left: 0, top: 0, behavior: "smooth" })}
       >
-        <ChevronUp />
+        <ChevronUp className="col-start-1 row-start-1 mt-1" />
+        <Minus className="col-start-1 row-start-1 -mt-2" />
       </button>
     </a.div>
   );
