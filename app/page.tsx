@@ -72,17 +72,17 @@ export default function Page() {
               solutions.
             </p>
             <p className="">
-              All in all I'm a simple guy that likes to work hard, create
-              impact, drive results, and vibe with the team.
+              All in all I&apos;m a simple guy that likes to work hard, create
+              impact, drive results, and vibe with the team!
             </p>
           </FadeInView>
         </div>
       </section>
-      <section id="experience" className="full-width bg-neutral pt-8">
+      <section id="work" className="full-width bg-neutral pt-8">
         <div className="p-4 md:p-8 *:leading-loose">
           <StickySectionHeader>
             <h2 className="text-base text-amped uppercase font-bold tracking-wider">
-              Experience
+              Work
             </h2>
           </StickySectionHeader>
           <GroupedCardList className="mb-8" />
@@ -157,10 +157,49 @@ export default function Page() {
               Projects
             </h2>
           </StickySectionHeader>
-          <ul>
-            <li>Portfolio</li>
-            <li>Ecommerce</li>
-            <li>Verto.sh</li>
+          <ul className="flex flex-wrap md:flex-nowrap gap-8">
+            <li>
+              <div className="card card-compact bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">tonycheong.com</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="card card-compact bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">tonycheong.com</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="card card-compact bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">tonycheong.com</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -173,8 +212,8 @@ export default function Page() {
             <div className="card bg-base-100 from-base-200 outline-base-content/5 relative overflow-hidden bg-gradient-to-b shadow-lg outline -outline-offset-1 sm:flex-row-reverse">
               <figure className="max-sm:bg-primary/10 isolate shrink-0 sm:w-3/5 max-h-[230px] !hidden sm:!flex">
                 <img
-                  className="pointer-events-none object-cover "
-                  alt="daisyUI store"
+                  className="pointer-events-none object-cover"
+                  alt="tony cheong's profile picture"
                   src="/avatar_wide_nobg_2.png"
                 />
               </figure>
@@ -182,16 +221,12 @@ export default function Page() {
               <div className="bg-primary pointer-events-none absolute bottom-[-120%] left-1/2 aspect-square w-full -translate-x-1/2 rounded-full opacity-20 blur-3xl"></div>
               <div className="bg-base-100 pointer-events-none absolute -top-3/4 right-1/4 z-[3] aspect-square w-1/2 rounded-full opacity-60 blur-3xl"></div>
               <div className="card-body relative isolate z-[3] sm:w-2/5">
-                <h2 className="card-title text-base-content text-xl font-bold contrast-200 [text-wrap:balance] sm:w-[200%] md:text-2xl">
+                <h2 className="card-title text-base-content text-xl font-bold contrast-200 [text-wrap:balance] sm:w-[200%] md:text-2xl mb-4">
                   <span>Get in touch</span>
                 </h2>
-                <div className="grow">
-                  <div className="text-lg leading-snug font-light sm:[text-wrap:balance] mb-4 sm:w-[200%]">
-                    <div className="mb-4">
-                      I am open to work and new opportunities. Let&apos;s work
-                      together!
-                    </div>
-                  </div>
+                <div className="grow text-lg leading-snug font-light sm:[text-wrap:balance] sm:w-[200%] mb-4">
+                  I am open to work and new opportunities. Let&apos;s work
+                  together!
                 </div>
                 <address>
                   <ul className="flex justify-around sm:justify-start gap-8">
@@ -227,7 +262,6 @@ export default function Page() {
               </div>
             </div>
           </FadeInView>
-          
         </div>
       </section>
     </Layout>
