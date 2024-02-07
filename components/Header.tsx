@@ -7,6 +7,7 @@ import { BarChart, GitHub, Linkedin, Mail, X } from "react-feather";
 import { ChangeEvent, ReactNode, useState } from "react";
 import useLastScrollDirection from "@/hooks/useLastScrollDirection";
 import useActiveSection from "@/hooks/useActiveSection";
+import config from '../app/config';
 
 export type NavItem = {
   text: string;
@@ -131,7 +132,7 @@ const Header = () => {
               <ul className="flex justify-between gap-2">
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/tcheong/"
+                    href={config.author.linkedin}
                     target="_blank"
                     className="btn btn-square btn-ghost"
                     tabIndex={-1}
@@ -141,7 +142,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/cloudhoy"
+                    href={config.author.github}
                     target="_blank"
                     className="btn btn-square btn-ghost"
                     tabIndex={-1}
@@ -151,7 +152,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="mailto:wanhoy.cheong@gmail.com"
+                    href={config.author.mailto}
                     target="_blank"
                     className="btn btn-square btn-ghost"
                     tabIndex={-1}

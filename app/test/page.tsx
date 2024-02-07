@@ -1,9 +1,13 @@
-import Layout from "@/components/Layout";
+
 
 export default function Page() {
   return (
-    <Layout>
-      TEST
-    </Layout>
+    <div className="flex flex-col min-h-screen antialiased bg-vignette">
+      <main className="content-grid">
+        <section>
+
+        </section>
+      </main>
+    </div>
   );
 }

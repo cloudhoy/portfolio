@@ -17,6 +17,8 @@ import {
   Mail,
   Smile,
 } from "react-feather";
+import config from './config';
+
 
 export default function Page() {
   return (
@@ -167,7 +169,7 @@ export default function Page() {
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">tonycheong.com</h2>
+                  <h3 className="card-title">tonycheong.com</h3>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                 </div>
               </div>
@@ -181,7 +183,7 @@ export default function Page() {
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">tonycheong.com</h2>
+                  <h3 className="card-title">tonycheong.com</h3>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                 </div>
               </div>
@@ -195,7 +197,7 @@ export default function Page() {
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">tonycheong.com</h2>
+                  <h3 className="card-title">tonycheong.com</h3>
                   <p>If a dog chews shoes whose shoes does he choose?</p>
                 </div>
               </div>
@@ -221,9 +223,9 @@ export default function Page() {
               <div className="bg-primary pointer-events-none absolute bottom-[-120%] left-1/2 aspect-square w-full -translate-x-1/2 rounded-full opacity-20 blur-3xl"></div>
               <div className="bg-base-100 pointer-events-none absolute -top-3/4 right-1/4 z-[3] aspect-square w-1/2 rounded-full opacity-60 blur-3xl"></div>
               <div className="card-body relative isolate z-[3] sm:w-2/5">
-                <h2 className="card-title text-base-content text-xl font-bold contrast-200 [text-wrap:balance] sm:w-[200%] md:text-2xl mb-4">
-                  <span>Get in touch</span>
-                </h2>
+                <div className="card-title text-base-content text-xl font-bold contrast-200 [text-wrap:balance] sm:w-[200%] md:text-2xl mb-4">
+                  Get in touch
+                </div>
                 <div className="grow text-lg leading-snug font-light sm:[text-wrap:balance] sm:w-[200%] mb-4">
                   I am open to work and new opportunities. Let&apos;s work
                   together!
@@ -232,7 +234,7 @@ export default function Page() {
                   <ul className="flex justify-around sm:justify-start gap-8">
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/tcheong/"
+                        href={config.author.linkedin}
                         target="_blank"
                         className="btn btn-square btn-ghost text-amped"
                       >
@@ -241,7 +243,7 @@ export default function Page() {
                     </li>
                     <li>
                       <a
-                        href="https://github.com/cloudhoy"
+                        href={config.author.github}
                         target="_blank"
                         className="btn btn-square btn-ghost text-amped"
                       >
@@ -250,7 +252,7 @@ export default function Page() {
                     </li>
                     <li>
                       <a
-                        href="mailto:wanhoy.cheong@gmail.com?subject=%5Btonycheong.com%5D%20&body=Hi%20Tony%2C"
+                        href={config.author.mailto}
                         target="_blank"
                         className="btn btn-square btn-ghost text-amped"
                       >
