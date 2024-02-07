@@ -6,9 +6,7 @@ export type FooterProps = {
 
 const Footer = ({ className }: FooterProps) => {
   return (
-    <footer
-      className={`footer text-xs text-muted ${className}`}
-    >
+    <footer className={`footer text-xs text-muted ${className}`}>
       <aside className="w-full max-w-screen-xl mx-auto place-items-center text-center">
         <p className="leading-tight">
           Designed & built with 💖 by{" "}
@@ -41,7 +39,7 @@ const Footer = ({ className }: FooterProps) => {
           >
             Amazon S3
           </a>
-          ,{" "}
+          , and{" "}
           <a
             href="https://aws.amazon.com/cloudfront/"
             target="_blank"
@@ -49,10 +47,7 @@ const Footer = ({ className }: FooterProps) => {
           >
             CloudFront
           </a>
-          , and{" "}
-          <Link href="/about" className="link-hover">
-            more!
-          </Link>
+          .
         </p>
       </aside>
     </footer>

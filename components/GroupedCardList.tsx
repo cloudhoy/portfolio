@@ -25,18 +25,19 @@ const GroupedCardList = ({ className }: GroupedCardListProps) => {
                 <ArrowUpRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </h3>
               <p className="mb-4 text-sm">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
-                aliquid laudantium aspernatur dolores veniam obcaecati velit
-                molestiae ipsam cumque rem, id eos modi dolor accusamus natus
-                odio porro tempora quibusdam?
+                Maintain and customize a web-based Enterprise Resource Planning
+                (ERP) solution specializing in lease, license, and tenancy
+                management for global real estate companies including City
+                Developments Limited, CapitaLand, and also government agencies
+                like the Singapore Land Authority.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-info badge-outline">C#</span>
                 <span className="badge badge-info badge-outline">SQL</span>
-                <span className="badge badge-success badge-outline">
+                <span className="badge badge-secondary badge-outline">
                   .NET Framework
                 </span>
-                <span className="badge badge-success badge-outline">
+                <span className="badge badge-secondary badge-outline">
                   ASP.NET
                 </span>
                 <span className="badge badge-secondary badge-outline">
@@ -64,31 +65,40 @@ const GroupedCardList = ({ className }: GroupedCardListProps) => {
                 <ArrowUpRight className="inline w-4 h-4 ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </h3>
               <p className="mb-4 text-sm">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
-                aliquid laudantium aspernatur dolores veniam obcaecati velit
-                molestiae ipsam cumque rem, id eos modi dolor accusamus natus
-                odio porro tempora quibusdam?
+                Developed and delivered high-quality web applications to a
+                diverse range of clients including RGE Group, S P Setia, RHB
+                bank, Alliance Bank, Securities Commision Malaysia, Telekom
+                Malaysia, and more. Provided leadership to teams of developers
+                through close collaboration, mentoring, and knowledge shares.
+                Spearheaded the development of a new in-house web application
+                framework.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="badge badge-info badge-outline">C#</span>
+                <span className="badge badge-info badge-outline">React</span>
+                <span className="badge badge-info badge-outline">
+                  AngularJS
+                </span>
                 <span className="badge badge-info badge-outline">HTML</span>
                 <span className="badge badge-info badge-outline">CSS</span>
                 <span className="badge badge-info badge-outline">
                   Typescript
                 </span>
                 <span className="badge badge-info badge-outline">jQuery</span>
-                <span className="badge badge-info badge-outline">SQL</span>
-                <span className="badge badge-success badge-outline">React</span>
-                <span className="badge badge-success badge-outline">
-                  AngularJS
+                <span className="badge badge-info badge-outline">
+                  Javascript
                 </span>
-                <span className="badge badge-success badge-outline">
+                <span className="badge badge-info badge-outline">SQL</span>
+                <span className="badge badge-secondary badge-outline">
                   .NET Framework
                 </span>
-                <span className="badge badge-success badge-outline">
+                <span className="badge badge-secondary badge-outline">
+                  Entity Framework
+                </span>
+                <span className="badge badge-secondary badge-outline">
                   SharePoint 2019
                 </span>
-                <span className="badge badge-success badge-outline">SPFX</span>
+                <span className="badge badge-secondary badge-outline">SPFX</span>
                 <span className="badge badge-secondary badge-outline">
                   SQL Server
                 </span>

@@ -17,8 +17,7 @@ import {
   Mail,
   Smile,
 } from "react-feather";
-import config from './config';
-
+import config from "./config";
 
 export default function Page() {
   return (
@@ -64,7 +63,7 @@ export default function Page() {
               Over the course of my career, I&apos;ve honed my skills in both
               front-end and back-end development, mastering various of
               technologies and frameworks such as C#, .NET framework, Next.js,
-              React, and Angular, to name a few.
+              React, and Typescript, to name a few.
             </p>
             <p className="mb-4">
               I thrive in environments where collaboration and creativity are
@@ -159,7 +158,7 @@ export default function Page() {
               Projects
             </h2>
           </StickySectionHeader>
-          <ul className="flex flex-wrap md:flex-nowrap gap-8">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <li>
               <div className="card card-compact bg-base-100 shadow-xl">
                 <figure>
@@ -178,13 +177,16 @@ export default function Page() {
               <div className="card card-compact bg-base-100 shadow-xl">
                 <figure>
                   <img
-                    src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
+                    src="https://raw.githubusercontent.com/lucavallin/verto/main/public/meta.png"
+                    alt="Verto.sh social banner"
                   />
                 </figure>
                 <div className="card-body">
-                  <h3 className="card-title">tonycheong.com</h3>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h3 className="card-title">Verto.sh</h3>
+                  <p>
+                    If a dog chews shoes whose shoes does he choose?
+                    https://github.com/lucavallin/verto
+                  </p>
                 </div>
               </div>
             </li>
@@ -197,8 +199,10 @@ export default function Page() {
                   />
                 </figure>
                 <div className="card-body">
-                  <h3 className="card-title">tonycheong.com</h3>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h3 className="card-title">Ecommerce</h3>
+                  <p>
+                    If a dog chews shoes whose shoes does he choose? coming soon
+                  </p>
                 </div>
               </div>
             </li>
