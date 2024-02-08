@@ -18,6 +18,7 @@ import {
   Smile,
 } from "react-feather";
 import config from "./config";
+import ProjectList from "@/components/ProjectList";
 
 export default function Page() {
   return (
@@ -158,55 +159,7 @@ export default function Page() {
               Projects
             </h2>
           </StickySectionHeader>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <li>
-              <div className="card card-compact bg-base-100 shadow-xl">
-                <figure>
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h3 className="card-title">tonycheong.com</h3>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="card card-compact bg-base-100 shadow-xl">
-                <figure>
-                  <img
-                    src="https://raw.githubusercontent.com/lucavallin/verto/main/public/meta.png"
-                    alt="Verto.sh social banner"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h3 className="card-title">Verto.sh</h3>
-                  <p>
-                    If a dog chews shoes whose shoes does he choose?
-                    https://github.com/lucavallin/verto
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="card card-compact bg-base-100 shadow-xl">
-                <figure>
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h3 className="card-title">Ecommerce</h3>
-                  <p>
-                    If a dog chews shoes whose shoes does he choose? coming soon
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <ProjectList />
         </div>
       </section>
       <section id="contact" className="full-width bg-neutral py-16">
@@ -216,7 +169,7 @@ export default function Page() {
           </h2>
           <FadeInView rootMargin="-20% 0%">
             <div className="card bg-base-100 from-base-200 outline-base-content/5 relative overflow-hidden bg-gradient-to-b shadow-lg outline -outline-offset-1 sm:flex-row-reverse">
-              <figure className="max-sm:bg-primary/10 isolate shrink-0 sm:w-3/5 max-h-[230px] !hidden sm:!flex">
+              <figure className="max-sm:bg-info/10 isolate shrink-0 sm:w-3/5 max-h-[230px] !hidden sm:!flex">
                 <img
                   className="pointer-events-none object-cover"
                   alt="tony cheong's profile picture"
@@ -224,7 +177,7 @@ export default function Page() {
                 />
               </figure>
               <div className="bg-accent pointer-events-none absolute bottom-[-50%] -left-1/5 aspect-square w-3/4 -translate-x-1/2 rounded-full opacity-20 blur-3xl"></div>
-              <div className="bg-primary pointer-events-none absolute bottom-[-120%] left-1/2 aspect-square w-full -translate-x-1/2 rounded-full opacity-20 blur-3xl"></div>
+              <div className="bg-info pointer-events-none absolute bottom-[-120%] left-1/2 aspect-square w-full -translate-x-1/2 rounded-full opacity-20 blur-3xl"></div>
               <div className="bg-base-100 pointer-events-none absolute -top-3/4 right-1/4 z-[3] aspect-square w-1/2 rounded-full opacity-60 blur-3xl"></div>
               <div className="card-body relative isolate z-[3] sm:w-2/5">
                 <div className="card-title text-base-content text-xl font-bold contrast-200 [text-wrap:balance] sm:w-[200%] md:text-2xl mb-4">
