@@ -29,22 +29,16 @@ body {
 
   display: grid;
   grid-template-columns:
-    [full-width-start]
-    minmax(var(--padding-inline), 1fr)
-    [content-start]
-    minmax(0, var(--content-max-width))
-    [content-end]
-    minmax(var(--padding-inline), 1fr)
-    [full-width-end];
+    [full-width-start] minmax(var(--padding-inline), 1fr) [content-start] minmax(0, var(--content-max-width)) [content-end] minmax(var(--padding-inline), 1fr) [full-width-end];
 }
 
-.content-grid > :not(.full-width),
-.full-width > :not(.full-width) {
+.content-grid> :not(.full-width),
+.full-width> :not(.full-width) {
   grid-column: content;
 }
 
-.content-grid > .full-width,
-.full-width > .full-width {
+.content-grid>.full-width,
+.full-width>.full-width {
   grid-column: full-width;
 }
 
@@ -56,8 +50,7 @@ body {
   @apply relative;
 
   &::before {
-    @apply content-[''] absolute top-0 right-0 
-      transition-[top,right] ease-in-out duration-200;
+    @apply content-[''] absolute top-0 right-0 transition-[top_right] ease-in-out duration-200;
   }
 
   &:hover::before {
@@ -82,11 +75,31 @@ body {
 }
 
 [data-theme="dark"] .text-muted {
-  @apply text-slate-400;
+  @apply text-slate-500;
+}
+
+.text-amped {
+  @apply text-gray-800;
+
+  .link:hover,
+  .link-hover {
+    @apply text-base-content;
+  }
+}
+
+[data-theme="dark"] .text-amped {
+  @apply text-gray-200;
+}
+
+.text-rainbow {
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
-[data-theme="dark"] .drop-shadow-2xl {
-  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(255 255 255 / 0.15));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.bg-vignette {
+  background-image: radial-gradient(farthest-corner circle at 50% 50%, rgba(0, 0, 0, .1) 12%, rgba(0, 0, 0, .15) 50%, rgba(0, 0, 0, .25) 120%);
+  background-size: 200%;
+  background-position: 50% 50%;
 }

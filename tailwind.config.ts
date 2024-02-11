@@ -43,7 +43,7 @@ const config: Config = {
           "accent": "hsl(175 100% 39%)",
           "neutral": "hsl(216 33% 97%)",
           "base-100": "hsl(285 8% 91%)",
-          "base-content": "hsl(222 48% 11%)",  
+          "base-content": "hsl(215 10% 37%)",  
         },
         dark: {
           "primary": "hsl(222, 76%, 47%)",
@@ -52,7 +52,7 @@ const config: Config = {
           "accent": "hsl(175 100% 61%)",
           "neutral": "hsl(252 13% 15%)",
           "base-100": "hsl(248 13% 12%)",
-          "base-content": "hsl(240 46% 95%)",
+          "base-content": "hsl(215 20% 65%)",
         },
       },
     ],

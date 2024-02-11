@@ -7,9 +7,10 @@ import { Moon, Sun } from "react-feather";
 export type ThemeSwitcherProps = {
   className?: string;
   showLabel?: boolean;
+  focusable?: boolean;
 };
 
-const ThemeSwitcher = ({ className, showLabel }: ThemeSwitcherProps) => {
+const ThemeSwitcher = ({ className, showLabel, focusable = true }: ThemeSwitcherProps) => {
   const { resolvedTheme, setTheme } = useTheme();
   const [label, setLabel] = useState("");
   const myref = useRef<HTMLLabelElement>(null);
@@ -34,6 +35,7 @@ const ThemeSwitcher = ({ className, showLabel }: ThemeSwitcherProps) => {
       className={`btn swap swap-rotate ${className}`}
       ref={myref}
       onClick={toggleTheme}
+      tabIndex={focusable ? 0 : -1}
     >
       <Sun className="swap-on" />
       <Moon className="swap-off" />
