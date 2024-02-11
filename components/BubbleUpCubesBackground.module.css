@@ -1,7 +1,7 @@
 .wrapper {
     position: absolute;
     inset: 0;
-    mask-image: radial-gradient(#000 0.5px, transparent 0.5px);
+    mask-image: radial-gradient(#000 1px, transparent 0);
     mask-size: 8px 8px;
     overflow: hidden;
     z-index: -10;
