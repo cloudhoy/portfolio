@@ -34,7 +34,7 @@ const StickySectionHeader = ({ children }: StickySectionHeaderProps) => {
       className={`sticky md:relative top-[-1px] pt-[calc(1em+1px)] pb-4 md:!mx-0 ${
         isStickyAndNavVisible
           ? "z-40 backdrop-blur-none"
-          : "backdrop-blur-sm md:backdrop-blur-none"
+          : "z-20 backdrop-blur-sm md:backdrop-blur-none"
       }`}
       style={{
         marginLeft: props.marginX.to([0, 1], [0, 2]).to((val) => `${val}rem`),
