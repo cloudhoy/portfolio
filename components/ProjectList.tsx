@@ -21,16 +21,16 @@ const ProjectList = () => {
             and delivered via Cloudfront.
           </p>
           <div className="flex flex-wrap gap-2">
-            <span className="badge badge-info badge-outline">React</span>
-            <span className="badge badge-info badge-outline">Typescript</span>
-            <span className="badge badge-info badge-outline">HTML</span>
-            <span className="badge badge-info badge-outline">CSS</span>
+            <span className="badge badge-secondary badge-outline">React</span>
+            <span className="badge badge-secondary badge-outline">Typescript</span>
+            <span className="badge badge-secondary badge-outline">HTML</span>
+            <span className="badge badge-secondary badge-outline">CSS</span>
             <span className="badge badge-secondary badge-outline">Next.js</span>
-            <span className="badge badge-accent badge-outline">Amazon S3</span>
-            <span className="badge badge-accent badge-outline">
+            <span className="badge badge-secondary badge-outline">Amazon S3</span>
+            <span className="badge badge-secondary badge-outline">
               Amazon Cloudfront
             </span>
-            <span className="badge badge-accent badge-outline">Figma</span>
+            <span className="badge badge-secondary badge-outline">Figma</span>
           </div>
         </ProjectCard>
       </li>
@@ -50,11 +50,11 @@ const ProjectList = () => {
             contributors.
           </p>
           <div className="flex flex-wrap gap-2">
-            <span className="badge badge-info badge-outline">GraphQL</span>
-            <span className="badge badge-info badge-outline">React</span>
-            <span className="badge badge-info badge-outline">Typescript</span>
-            <span className="badge badge-info badge-outline">HTML</span>
-            <span className="badge badge-info badge-outline">CSS</span>
+            <span className="badge badge-secondary badge-outline">GraphQL</span>
+            <span className="badge badge-secondary badge-outline">React</span>
+            <span className="badge badge-secondary badge-outline">Typescript</span>
+            <span className="badge badge-secondary badge-outline">HTML</span>
+            <span className="badge badge-secondary badge-outline">CSS</span>
             <span className="badge badge-secondary badge-outline">Next.js</span>
           </div>
         </ProjectCard>
@@ -72,16 +72,16 @@ const ProjectList = () => {
             Fully responsive e-commerce website, built with Next.js + Tailwind CSS. 
           </p>
           <div className="flex flex-wrap gap-2">
-            <span className="badge badge-info badge-outline">React</span>
-            <span className="badge badge-info badge-outline">Typescript</span>
-            <span className="badge badge-info badge-outline">HTML</span>
-            <span className="badge badge-info badge-outline">CSS</span>
+            <span className="badge badge-secondary badge-outline">React</span>
+            <span className="badge badge-secondary badge-outline">Typescript</span>
+            <span className="badge badge-secondary badge-outline">HTML</span>
+            <span className="badge badge-secondary badge-outline">CSS</span>
             <span className="badge badge-secondary badge-outline">Next.js</span>
-            <span className="badge badge-accent badge-outline">Amazon S3</span>
-            <span className="badge badge-accent badge-outline">
+            <span className="badge badge-secondary badge-outline">Amazon S3</span>
+            <span className="badge badge-secondary badge-outline">
               Amazon Cloudfront
             </span>
-            <span className="badge badge-accent badge-outline">Figma</span>
+            <span className="badge badge-secondary badge-outline">Figma</span>
           </div>
         </ProjectCard>
       </li>
