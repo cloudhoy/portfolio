@@ -1,6 +1,6 @@
 import BubbleUpCubesBackground from "@/components/BubbleUpCubesBackground";
 import FadeInView from "@/components/FadeInView";
-import GroupedCardList from "@/components/GroupedCardList";
+import ExperienceList from "@/components/ExperienceList";
 import Layout from "@/components/Layout";
 import StickySectionHeader from "@/components/StickySectionHeader";
 import TitleAnimated from "@/components/TitleAnimated";
@@ -87,7 +87,7 @@ export default function Page() {
               Work
             </h2>
           </StickySectionHeader>
-          <GroupedCardList className="mb-8" />
+          <ExperienceList className="mb-8" />
           <a
             href="/resume_tony_cheong.pdf"
             target="_blank"
