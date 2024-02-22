@@ -2,7 +2,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cloudhoy/portfolio/master/public/logo_tc_white.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cloudhoy/portfolio/master/public/logo_tc_black.png">
-  <img alt="logo" src="https://raw.githubusercontent.com/cloudhoy/portfolio/master/public/logo_tc_white.png">
+  <img alt="logo" src="https://raw.githubusercontent.com/cloudhoy/portfolio/master/public/logo_tc_white.png" width="100">
 </picture>
 </div>
 <h1 align="center">
