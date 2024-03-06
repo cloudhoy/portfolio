@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: config.metadata.title,
     description: config.metadata.description,
-    url: "./",
+    url: config.metadata.siteUrl,
     siteName: config.metadata.title,
     images: [
       {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "./",
+    canonical: config.metadata.siteUrl,
   },
   robots: {
     index: true,
@@ -104,7 +104,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#23212B",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
   colorScheme: "dark light"
 };
 
