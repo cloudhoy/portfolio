@@ -66,14 +66,14 @@ const Header = () => {
                 key={`${nav.text}${nav.href}`}
                 className="font-semibold uppercase tracking-wide"
               >
-                <Link
+                <a
                   href={nav.href}
                   className={`${nav.className} ${
                     nav.href === `#${activeSection}` ? "active" : ""
                   }`}
                 >
                   {nav.text}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
