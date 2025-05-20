@@ -12,7 +12,33 @@ const ExperienceList = ({ className }: GroupedCardListProps) => {
       <li>
         <FadeInView>
           <ExperienceCard
-            workPeriod="2022 — Present"
+            workPeriod="2024 — Present"
+            cardTitle="Senior Software Engineer | Astek Singapore"
+            href="https://astekgroup.fr/country/singapore/?lang=en"
+          >
+            <p className="mb-4 text-sm">
+              Description coming soon! :)
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="badge badge-secondary badge-outline">Python</span>
+              <span className="badge badge-secondary badge-outline">PostgreSQL</span>
+              <span className="badge badge-secondary badge-outline">
+                AWS
+              </span>
+              <span className="badge badge-secondary badge-outline">
+                CI/CD
+              </span>
+              <span className="badge badge-secondary badge-outline">
+                K8s
+              </span>
+            </div>
+          </ExperienceCard>
+        </FadeInView>
+      </li>
+      <li>
+        <FadeInView>
+          <ExperienceCard
+            workPeriod="2022 — 2024"
             cardTitle="Software Engineer | Anacle Systems Ltd"
             href="https://anacle.com/"
           >
