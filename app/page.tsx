@@ -50,7 +50,7 @@ export default function Page() {
       <section id="about" className="full-width bg-neutral pt-8">
         <div className="p-4 md:p-8 *:leading-loose">
           <StickySectionHeader>
-            <h2 className="text-base text-amped uppercase font-bold tracking-wider">
+            <h2 className="text-base text-amped uppercase font-bold tracking-wider" id="about">
               About
             </h2>
           </StickySectionHeader>
@@ -83,7 +83,7 @@ export default function Page() {
       <section id="work" className="full-width bg-neutral pt-8">
         <div className="p-4 md:p-8 *:leading-loose">
           <StickySectionHeader>
-            <h2 className="text-base text-amped uppercase font-bold tracking-wider">
+            <h2 className="text-base text-amped uppercase font-bold tracking-wider" id="work">
               Work
             </h2>
           </StickySectionHeader>
@@ -155,7 +155,7 @@ export default function Page() {
       <section id="projects" className="full-width bg-neutral pt-8">
         <div className="p-4 md:p-8 *:leading-loose">
           <StickySectionHeader>
-            <h2 className="text-base text-amped uppercase font-bold tracking-wider">
+            <h2 className="text-base text-amped uppercase font-bold tracking-wider" id="projects">
               Projects
             </h2>
           </StickySectionHeader>
@@ -164,7 +164,7 @@ export default function Page() {
       </section>
       <section id="contact" className="full-width bg-neutral py-16">
         <div className="p-4 md:p-8 *:leading-loose">
-          <h2 className="text-base text-amped uppercase font-bold tracking-wider mb-4">
+          <h2 className="text-base text-amped uppercase font-bold tracking-wider mb-4" id="contacts">
             Contact
           </h2>
           <FadeInView rootMargin="-20% 0%">
